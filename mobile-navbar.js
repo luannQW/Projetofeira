@@ -1,6 +1,23 @@
 
-// Select button
-var button = document.getElementById('read_button');
+//Botão Selecionar
+var  botão  =  documento . getElementById ( 'read_button' ) ;
+
+// Evento de clique
+botão . addEventListener ( 'click' ,  function ( )  {
+    //Selecione o cartão
+    var  cartão  =  documento . querySelector ( '.card' ) ;
+
+    // Adicionar/Remover Classe Ativa
+    cartão . classList . alternar ( 'ativo' ) ;
+
+    if  ( card . classList . contém ( 'active' ) )  {
+        // Muda o texto do botão se a classe estiver ativa
+         botão de retorno . textContent  =  'Ler menos' ;
+    }
+    
+    // Muda o texto do botão se não tiver a classe ativa
+    botão . textContent  =  'Leia mais' ;
+} ) ;var button = document.getElementById('read_button');
 
 // Click Event
 button.addEventListener('click', function() {
