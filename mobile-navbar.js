@@ -19,25 +19,23 @@ button.addEventListener('click', function() {
     button.textContent = 'Read more';
 });
 
+const  btnMobile  =  document . getElementById ( 'btn-mobile' ) ;
 
-const btnMobile = document.getElementById('btn-mobile');
-
-function toggleMenu(event) {
-  if (event.type === 'touchstart') event.preventDefault();
-  const nav = document.getElementById('nav');
-  nav.classList.toggle('active');
-  const active = nav.classList.contains('active');
-  event.currentTarget.setAttribute('aria-expanded', active);
-  if (active) {
-    event.currentTarget.setAttribute('aria-label', 'Fechar Menu');
-  } else {
-    event.currentTarget.setAttribute('aria-label', 'Abrir Menu');
+function  toggleMenu ( evento )  {
+  if  ( event . type  ===  'touchstart' )  event . preventDefault ( ) ;
+  const  nav  =  documento . getElementById ( 'nav' ) ;
+  nav . classList . alternar ( 'ativo' ) ;
+  const  ativo  =  nav . classList . contém ( 'ativo' ) ;
+  evento . atualTarget . setAttribute ( 'aria-expandido' ,  ativo ) ;
+  se  ( ativo )  {
+    evento . atualTarget . setAttribute ( 'aria-label' ,  'Fechar Menu' ) ;
+  }  senão  {
+    evento . atualTarget . setAttribute ( 'aria-label' ,  'Abrir Menu' ) ;
   }
-};
-btnMobile.addEventListener('click', toggleMenu);
-btnMobile.addEventListener('touchstart', toggleMenu);
+}
 
-
+btnMobile . addEventListener ( 'click' ,  toggleMenu ) ;
+btnMobile . addEventListener ( 'touchstart' ,  toggleMenu ) ;
 
 
 
